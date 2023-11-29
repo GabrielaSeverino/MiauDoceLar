@@ -40,49 +40,130 @@
             </div>
 
         </div>
+     </div>
 
-        <!-- <div class="dash-right">
+        <div class="containerPesquisa">
+            <div class="card-pesquisa">
+              <h1 style=" color: #FD8210;">Purrsquisa</h1>
+                <div class="formulario">
 
-            <div class="avisos">
-                <div class="container">
-                    <h1>Editar um aviso</h1>
-                    <div class="div-form">
-                        <label>
-                            ID:
-                            <br>
-                            <input id="input_id" maxlength="100" type="text" style="color: rgb(196, 196, 196)" disabled>
-                        </label>
-                        <label>
-                            Autor:
-                            <br>
-                            <input id="input_nome" maxlength="100" type="text" style="color: rgb(196, 196, 196)"
-                                disabled>
-                        </label>
-                        <label>
-                            Título:
-                            <br>
-                            <input id="input_titulo" maxlength="100" type="text" style="color: rgb(196, 196, 196)"
-                                disabled>
-                        </label>
-                        <br>
-                        <label>
-                            Descrição (máximo de 250 caracteres):
-                            <br>
-                            <textarea id="textarea_descricao" maxlength="250" rows="5"></textarea>
-                        </label>
-                        <br>
-                        <button onclick="editar()">Editar</button>
-                    </div> -->
+                    <div class="campo">
+                        <span><span style=" color: #FAB4BC;">❤ </span>Qual é a sua cor de pelagem de gato favorita?</span>
+                        <select class="selectBonito" id="select_pergunta1">
+                          <option value="Branco">Branco</option>
+                          <option value="Cinza">Cinza</option>
+                          <option value="Laranja">Laranja</option>
+                          <option value="Tricolor ou bicolor">Tricolor ou bicolor</option>
+                          <option value="Rajado ou Escaminha">Rajado ou Escaminha</option>
+                        <option value="Tipo Siamês">Tipo Siamês (degradê de marrons)</option>
+                        </select>
+                     </div>
+    
+                      <div class="campo">
+                        <span><span style=" color: #FAB4BC;">❤ </span>Qual foi o primeiro critério que pensou ao decidir adotar um gato? (Ou pensou para quando futuramente adotar)?</span>
+                        <select class="selectBonito" id="select_pergunta2">
+                          <option value="Idade específica (filhote)">Idade específica (filhote)</option>
+                          <option value="Cor de pelagem específica (Branco, ruivo, bicolor, tricolor ou escaminha)">Cor de pelagem específica (Branco, ruivo, bicolor, tricolor ou escaminha)</option>
+                          <option value="Sexo específico (Macho)">Sexo específico (Macho)</option>
+                          <option value="Idade específica (Adulto)">Idade específica (Adulto)</option>
+                          <option value="Sexo específico (Femêa)">Sexo específico (Femêa)</option>
+                          <option value="Cor de pelagem específica (Marrom, cinza, preto ou frajola)">Cor de pelagem específica (Marrom, cinza, preto ou frajola)</option>
+                          <option value="Não cheguei a pensar nisso">Não cheguei a pensar nisso</option>
+                        </select>
+                     </div>
 
-                <!-- </div>
+                     <div class="campo">
+                        <span><span style=" color: #FAB4BC;">❤ </span>Se você tem ou teve um gato, qual é a cor predominante da pelagem dele?</span>
+                        <select class="selectBonito" id="select_pergunta3">
+                          <option value="Branco">Branco</option>
+                          <option value="Cinza">Cinza</option>
+                          <option value="Laranja">Laranja</option>
+                          <option value="Preto">Preto</option>
+                          <option value="Marrom">Marrom</option>
+                          <option value="Ainda não tenho um gato>Cor de pelagem específica">Ainda não tenho um gato</option>
+                          </select>
+                     </div>
+
+                     <div class="campo">
+                        <span><span style=" color: #FAB4BC;">❤ </span>Você já ouviu falar em crenças que associam alguma cor de pelagem de gato a sorte ou azar?</span>
+                        <select class="selectBonito" id="select_pergunta4">
+                          <option value="Sim">Sim</option>
+                          <option value="Não">Não</option>
+                          </select>
+                     </div>
+                     
+                     <div class="campo">
+                        <span><span style=" color: #FAB4BC;">❤ </span>Você tem gatos? Se sim, quantos gatinhos?</span>
+                        <select class="selectBonito" id="select_pergunta5">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4 ou mais">4 ou mais</option>
+                          <option value="Não tenho gato">Não tenho gato</option>
+                        </select>
+                     </div>
+
+                     <div class="campo">
+                        <span><span style=" color: #FAB4BC;">❤ </span>Você acredita que o sexo do gato também está relacionado a certas características de personalidade? (Por exemplo, gatas femêas são mais limpas que os gatos machos)?</span>
+                        <select class="selectBonito" id="select_pergunta6">
+                          <option value="Sim">Sim</option>
+                          <option value="Não">Não</option>
+                        </select>
+                     </div>
+
+                     <div class="campo">
+                        <span><span style=" color: #FAB4BC;">❤ </span>Você pegou seu gatinho quando ele tinha quanto tempo de vida?</span>
+                        <select class="selectBonito" id="select_pergunta7">
+                          <option value="Menos de 6 meses">Menos de 6 meses</option>
+                          <option value="Entre 6 meses e 1 ano">Entre 6 meses e 1 ano</option>
+                          <option value="1 ano ou mais">1 ano ou mais</option>
+                          <option value="Não tenho gato">Não tenho gato</option>
+                        </select>
+                     </div>
+
+                     <div class="campo">
+                        <span><span style=" color: #FAB4BC;">❤ </span>Você sabia que depois dos gatos adultos, os gatos pretos têm as taxas de adoção mais baixas em comparação aos gatos de pelagens de outras cores?</span>
+                        <select class="selectBonito" id="select_pergunta8">
+                          <option value="Sim">Sim</option>
+                          <option value="Não">Não</option>
+                          <option value="Não cheguei a pensar nisso">Não cheguei a pensar nisso</option>
+                        </select>
+                     </div>
+
+                     <div class="campo">
+                        <span><span style=" color: #FAB4BC;">❤ </span>Você acredita que a cor da pelagem de um gato está associada a certas características de personalidade? (Por exemplo, gatos ruivos são mais apocalípticos)?</span>
+                        <select class="selectBonito" id="select_pergunta9">
+                          <option value="Sim">Sim</option>
+                          <option value="Não">Não</option>
+                        </select>
+                     </div>
+
+                     <div class="campo">
+                        <span><span style=" color: #FAB4BC;">❤ </span>Você já teve ou atualmente tem um gato preto?</span>
+                        <select class="selectBonito" id="select_pergunta10">
+                          <option value="Sim">Sim</option>
+                          <option value="Não">Não</option>
+                          <option value="Pretendo adotar um no futuro">Pretendo adotar um no futuro</option>
+                        </select>
+                     </div>
+                    </div>
+                    
+                  <button class="botao" onclick="responder()">Enviar</button>
+                  
+                  <div id="div_aguardar" class="loading-div">
+                    <img src="./assets/circle-loading.gif" id="loading-gif" />
+                </div>
+
             </div>
-        </div> -->
+        </div>
     </div>
 </body>
-
 </html>
 
 <script>
+                    // <script>
+                    // var cor = select_cor.value
+
     function listarInfosDeUm() {
         console.log("Criar função de trazer informações de post escolhido");
     }
@@ -110,5 +191,4 @@
             console.log(`#ERRO: ${resposta}`);
         });
     }
-
 </script>
