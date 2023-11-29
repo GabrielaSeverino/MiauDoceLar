@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miau Doce Lar | Cadastro</title>
+  <script src="./js/sessao.js"></script>
+  <link rel="icon" href="assets/icon/IconRosa.png"/>
+  <link rel="stylesheet" href="./css/estilo.css" />
+  <link rel="fonts" href="assets/fonts/AppetitePro-Bold-BF64cc5fc3078d1.otf">
+  <link rel="fonts" href="assets/fonts/AppetitePro-Regular-BF64cc5fc2daf21.otf">
+</head>
+
+<body onload="listar()">
+
+    <div class="header"> <!--header inicio-->
+        <div class="container"> <!--DIV CONTAINER-->
+          <img class="logo" src="assets/imgs/logoBrancaBold v2.png">
+
+            <ul class="navbar"> <!--DIV NAVBAR-->
+                <li>
+                  <a href="index.html">Inicio</a>
+                </li>
+
+                <li>
+                  <a href="./index.html#gatos-pretos">Gatos Pretos</a>
+                </li>
+
+                <li>
+                  <a href="./index.html#curiosidades">Curiosidades</a>
+                </li>
+
+                <li>
+                  <a href="./index.html#miaudote">Miaudote</a>
+                </li>
+
+                <li>
+                  <a href="./index.html#gatoteca">Gatoteca</a>
+                </li>
+
+                <li>
+                  <a href="sobreMim.html">Sobre a Humana</a>
+                </li>
+
+                <li>
+                  <a href="gratidao.html">Gratidão</a>
+                </li>
+
+                <li>❤</li>
+
+                <li>
+                  <a class="heart" href="login.html">Login</a>
+                </li>
+
+                <li class="cads">
+                  <a href="cadastro.html">Cadastro</a>
+                </li>
+            </ul> <!--FIM DIV NAVBAR-->
+
+        </div> <!--FIM DIV CONTAINER-->
+      </div> <!--header fim-->
+
+    <!-- <div class="login">
+      <div class="alerta_erro">
+        <div class="card_erro" id="cardErro">
+          <span id="mensagem_erro"></span>
+        </div>
+      </div> -->
+
+      <div class="container">
+        <div class="card-cadastro">
+          <h1>Cadastre-se</h1>
+            <div class="formulario">
+              <!--
+                            Para inserir mais um campo, copie uma das inputs abaixo.
+                            Assim que inserir vá para o script abaixo.
+                        -->
+              <div class="campo">
+                <span>Nome:</span>
+                <input id="nome_input" type="text" placeholder="Digite seu nome" />
+              </div>
+
+              <!-- divisão de div's -->
+
+              <div class="campo">
+                <span>Data de nascimento:</span>
+                <input id="dtNasc_input" type="date" placeholder="Digite sua data de nascimento" />
+              </div>
+
+              <!-- divisão de div's -->
+
+              <div class="campo">
+                <span>Email:</span>
+                <input id="email_input" type="text" placeholder="seuemail@provedor.com" />
+              </div>
+
+              <!-- divisão de div's -->
+
+              <div class="campo">
+                <span>Senha:</span>
+                <input id="senha_input" type="password" placeholder="Crie uma senha" />
+              </div>
+
+              <!-- divisão de div's -->
+
+              <div class="campo">
+                <span>Confirmação da Senha:</span>
+                <input id="confirmacao_senha_input" type="password" placeholder="Confirme sua senha" />
+              </div>
+
+              <button class="botao" onclick="cadastrar()">Cadastrar</button>
+              
+              <div id="div_aguardar" class="loading-div">
+                <img src="./assets/circle-loading.gif" id="loading-gif" />
+              </div>
+
+              <!-- divisão de div's -->
+
+            <!-- <div id="div_erros_login"></div> -->
+          </div>
+      </div>
+    </div>
+
+    <footer class="footer"> <!--footer inicio-->
+      <div class="container">
+          <div class="container_footer">
+  
+                <div class="container_infor_footer">
+
+                  <div class="info-footer">
+                      <span class="titles-footer">&hearts; Sobre nós:</span>
+                        <p>Política de Privacidade</p>
+                        <p>Regras do Site</p>
+                  </div>
+                  
+                  <!-- divisão de div's -->
+
+                  <div class="info-footer">
+                      <span class="titles-footer">&hearts; Nos Acompanhe:</span>
+                        <div class="icones-flex">
+                            <i class="instagram icones"></i>
+                            <i class="github icones"></i>
+                        </div>
+                      <div class="frase"><h4>Miau Doce Lar &copy; 2023<br>Todos os direitos reservados.</h4></div>
+                  </div>
+
+                </div>
+  
+          </div>
+      </div>
+    </footer> <!--footer fim-->
+</body>
+</html>
+
+<script>
+  function cadastrar() {
+    aguardar();
+
+    // Agora vá para o método fetch logo abaixo
+    var nomeVar = nome_input.value;
+    var dtNascVar = dtNasc_input.value;
+    var emailVar = email_input.value;
+    var senhaVar = senha_input.value;
+    var confirmacaoSenhaVar = confirmacao_senha_input.value;
+
+    if (nomeVar == "" || dtNascVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+      cardErro.style.display = "block";
+      mensagem_erro.innerHTML = "(Por favor, preencha todos os campos!)";
+      finalizarAguardar();
+      return false;
+    } else {
+      setInterval(sumirMensagem, 5000);
+    }
+
+    // Enviando o valor da nova input
+    fetch("/usuarios/cadastrar", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        // crie um atributo que recebe o valor recuperado aqui
+        // Agora vá para o arquivo routes/usuario.js
+        nomeServer: nomeVar,
+        emailServer: emailVar,
+        senhaServer: senhaVar,
+        empresaServer: empresaVar
+      }),
+    })
+      .then(function (resposta) {
+        console.log("resposta: ", resposta);
+
+        if (resposta.ok) {
+          cardErro.style.display = "block";
+
+          mensagem_erro.innerHTML =
+            "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+
+          setTimeout(() => {
+            window.location = "login.html";
+          }, "2000");
+
+          limparFormulario();
+          finalizarAguardar();
+        } else {
+          throw "Houve um erro ao tentar realizar o cadastro!";
+        }
+      })
+      .catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+        finalizarAguardar();
+      });
+
+    return false;
+  }
+
+  function listar() {
+    fetch("/empresas/listar", {
+      method: "GET",
+    })
+      .then(function (resposta) {
+        resposta.json().then((empresas) => {
+          empresas.forEach((empresa) => {
+            listaEmpresas.innerHTML += `<option value='${empresa.id}'>${empresa.cnpj}</option>`;
+          });
+        });
+      })
+      .catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+      });
+  }
+
+  function sumirMensagem() {
+    cardErro.style.display = "none";
+  }
+</script>

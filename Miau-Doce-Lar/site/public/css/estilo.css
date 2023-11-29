@@ -1,0 +1,336 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image:url('../assets/imgs/Background\ MiauDoceLar.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "AppetitePro";
+  overflow: scroll; 
+  scroll-behavior: smooth;
+}
+
+:root {
+  --tamanho-header: 85px;
+  --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-simulador: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
+  --tamanho-footer: 100px;
+}
+
+.header {
+  background-color: #FF93A0;
+  box-shadow: 0 0 10px 5px #FAB4BC;
+  height: var(--tamanho-header);
+}
+
+.container {
+  display: flex;
+  justify-content: center; /*Mexe no eixo X*/
+  align-items: center; /*Mexe no eixo y*/
+  width: auto;
+}
+
+.header .container { /*Pega o container dentro do header*/
+  background-color: #FF93A0;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  margin: 0 5%;
+}
+
+.navbar {
+  column-gap: 25px;
+  white-space: nowrap;
+  width: fit-content;
+  display: flex;
+  align-items:flex-end;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.header a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.logo{
+  width: 250px;
+  padding: 5px;
+  display: flex;
+}
+
+.card-cadastro {
+  color:#FF93A0;
+  background-color: white;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 6px #FAB4BC;
+  width: 35%;
+  height: 100%;
+  margin-top: 130px;
+}
+
+.card h1 {
+  margin: 0;
+  font-size: 30px;
+  font-family: 'AppetitePro';
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 15px;
+}
+
+.botao {
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  background-color: #FD8210;
+  width: 120px;
+  height: 30px;
+  align-self: center;
+  box-shadow: 2px 2px 7px #FD8210;
+  margin: 15px;
+  font-family: "AppetitePro";
+  font-size: larger;
+}
+
+.formulario {
+  display: flex;
+  height: 90%;
+  width: 80%;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.formulario input {
+  border: 2px solid #FFD481;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+.footer .container p {
+  text-align: center;
+  color: white;
+}
+
+.container_footer {
+  background-color: #FF93A0;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.info-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  align-items: flex-start;
+
+}
+
+.container_infor_footer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+
+.icones-flex {
+  margin: 10px;
+  display: flex;
+}
+
+.icones {
+  width: 30px; /*Defina o tamanho desejado para o ícone */
+  height: 30px;
+  background-color: white;
+  margin: 0 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  box-shadow: 2px 2px 5px #FD8210;
+}
+
+.instagram {
+  content: url('../assets/imgs/instagram.svg');
+}
+
+.github {
+  content: url('../assets/imgs/github-alt.svg');
+}
+
+.titles-footer {
+  text-transform: uppercase;
+  color: white;
+  font-family: "AppetitePro";
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.frase {
+font-size: small;
+text-align: center;
+color: #FD8210;
+}
+
+.loading-div {
+  width: 50px;
+  display: none;
+}
+
+.loading-div img {
+  height: 50px;
+  width: 50px;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+
+.banner {
+  height: var(--tamanho-banner);
+  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-size: cover;
+}
+
+.card {
+  width: 30%;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: palevioletred;
+  row-gap: 20px;
+}
+
+.banner .container {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.banner .container p {
+  font-size: 36px;
+  color: white;
+  width: 280px;
+}
+
+.banner .container span {
+  font-weight: 800;
+}
+
+.social {
+  background-color: #e5e5e5;
+  display: flex;
+}
+
+.social .container {
+  justify-content: center;
+}
+
+.box img {
+  width: 170px;
+}
+
+.social .container .boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.box {
+  width: 280px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box p {
+  text-align: center;
+}
+
+.login {
+  height: var(--tamanho-login);
+  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-size: cover;
+}
+
+.login .container {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card-login {
+  height: 60%;
+}
+
+.formulario {
+  display: flex;
+  height: 90%;
+  width: 80%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.formulario span {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+/* .formulario select {
+  border: 2px solid #FFD481;
+  background-color: white;
+  color: black;
+  height: 36px;
+  text-align: center;
+  border-radius: 10px;
+} */
+
+#div_erros_login {
+  display: none
+}
+
+.alerta_erro{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card_erro {
+  display: none;
+  background-color: #fff;
+  color: black;
+  width: 230px;
+  position: fixed;
+  border-radius: 4px;
+  border: #e6005a 3px solid;
+  padding: 10px;
+  margin-right: 10%;
+}
+
+.card_erro #mensagem_erro{
+  font-weight: 500;
+  font-size: 20px;
+}
