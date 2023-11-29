@@ -16,16 +16,16 @@ fkUsuarioQuizz INT NOT NULL,
 CONSTRAINT fkQuizz FOREIGN KEY (fkUsuarioQuizz) REFERENCES usuario(idUsuario),
 pontuacao INT NOT NULL);
 
-CREATE TABLE pesquisaGatos(
-idGato INT PRIMARY KEY AUTO_INCREMENT,
-nome VARCHAR(30) NOT NULL,
-dtNasc DATE NOT NULL,
-raca VARCHAR(15) NOT NULL,
-sexo CHAR(5) NOT NULL,
-cor VARCHAR(10) NOT NULL,
-personalidade VARCHAR(15) NOT NULL,
-fkUsuario INT NOT NULL,
-CONSTRAINT fkGatos FOREIGN KEY (fkUsuario) REFERENCES usuario(idUsuario));
+-- CREATE TABLE pesquisaGatos(
+-- idGato INT PRIMARY KEY AUTO_INCREMENT,
+-- nome VARCHAR(30) NOT NULL,
+-- dtNasc DATE NOT NULL,
+-- raca VARCHAR(15) NOT NULL,
+-- sexo CHAR(5) NOT NULL,
+-- cor VARCHAR(10) NOT NULL,
+-- personalidade VARCHAR(15) NOT NULL,
+-- fkUsuario INT NOT NULL,
+-- CONSTRAINT fkGatos FOREIGN KEY (fkUsuario) REFERENCES usuario(idUsuario));
 
 CREATE TABLE perguntasFormulario(
 idPergunta INT PRIMARY KEY AUTO_INCREMENT,

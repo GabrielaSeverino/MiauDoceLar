@@ -40,7 +40,7 @@ body {
 }
 
 .navbar {
-  column-gap: 25px;
+  column-gap: 20px;
   white-space: nowrap;
   width: fit-content;
   display: flex;
@@ -52,7 +52,6 @@ body {
 .header a {
   text-decoration: none;
   color: #ffffff;
-  font-weight: bold;
 }
 
 .logo{
@@ -145,7 +144,10 @@ body {
   justify-content: flex-end;
   color: white;
   align-items: flex-start;
+}
 
+.info-footer p {
+  font-size: small;
 }
 
 .container_infor_footer{
@@ -182,14 +184,13 @@ body {
   text-transform: uppercase;
   color: white;
   font-family: "AppetitePro";
-  font-weight: bold;
   margin-top: 10px;
 }
 
 .frase {
-font-size: small;
+font-size: xx-small;
 text-align: center;
-color: #FD8210;
+color: #000;
 }
 
 .loading-div {
@@ -200,6 +201,108 @@ color: #FD8210;
 .loading-div img {
   height: 50px;
   width: 50px;
+}
+
+.agora a {
+  color: #000;
+  font-weight: bold;
+}
+
+.container-sobreMim {
+  background-color: white;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 6px #FAB4BC;
+  margin: 10%;
+  padding-bottom: 50px;
+}
+
+.container-sobreMim h7 {
+  color: #FD8210;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container-sobreMim p {
+  color: black;
+  font-family: "AppetitePro";
+}
+
+.container-gratidao {
+  background-color: white;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 6px #FD8210;
+  margin: 10%;
+  padding-bottom: 50px;
+}
+
+.container-gratidao h8 {
+  color: #FF93A0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container-gratidao p {
+  color: black;
+  font-family: "AppetitePro";
+}
+
+.container-index {
+  background-color: white;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 6px #FD8210;
+  margin: 10%;
+  padding-bottom: 50px;
+}
+
+.container-index h9 {
+  color: #FF93A0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container-index p {
+  color: black;
+  font-family: "AppetitePro";
+}
+
+.card-login {
+  color:#FF93A0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 6px #FAB4BC;
+  width: 35%;
+  height: 100%;
+  margin: 10%;
+  row-gap: 20px;
+  padding-top: 45px;
+}
+
+.card-login h6 {
+  margin: 0;
+  font-size: 27px;
+}
+
+.fotos {
+  border-radius: 25%;
 }
 
 /* ------------------------------------------------------------------------------------ */
@@ -283,10 +386,6 @@ color: #FD8210;
   height: 100%;
 }
 
-.card-login {
-  height: 60%;
-}
-
 .formulario {
   display: flex;
   height: 90%;
@@ -299,15 +398,6 @@ color: #FD8210;
   font-size: 15px;
   font-weight: 800;
 }
-
-/* .formulario select {
-  border: 2px solid #FFD481;
-  background-color: white;
-  color: black;
-  height: 36px;
-  text-align: center;
-  border-radius: 10px;
-} */
 
 #div_erros_login {
   display: none
