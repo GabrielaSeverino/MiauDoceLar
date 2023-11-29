@@ -234,7 +234,6 @@ color: #000;
 
 .container-gratidao {
   background-color: white;
-  padding-top: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,18 +241,22 @@ color: #000;
   border-radius: 15px;
   box-shadow: 0 0 10px 6px #FD8210;
   margin: 10%;
-  padding-bottom: 50px;
+  text-align: center;
+  padding: 40px;
+  row-gap: 20px;
 }
 
 .container-gratidao h8 {
-  color: #FF93A0;
+  color: #FD8210;
   font-weight: bold;
   font-size: 20px;
 }
 
 .container-gratidao p {
-  color: black;
+  color: rgb(73, 73, 73);
   font-family: "AppetitePro";
+  padding: 10px;
+  /* text-align: center; */
 }
 
 .container-index {
@@ -303,6 +306,11 @@ color: #000;
 
 .fotos {
   border-radius: 25%;
+}
+
+.destaqueTexto {
+  color:#FF93A0;
+  font-weight: bold;
 }
 
 /* ------------------------------------------------------------------------------------ */
