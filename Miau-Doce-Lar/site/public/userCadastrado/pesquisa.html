@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="fonts" href="assets/fonts/AppetitePro-Bold-BF64cc5fc3078d1.otf">
   <link rel="fonts" href="assets/fonts/AppetitePro-Regular-BF64cc5fc2daf21.otf">
+  <link rel="dash" href="dashboard.html">
 </head>
 
 <body onload="validarSessao(), listarInfosDeUm()" style="background-image: url(../assets/imgs/Background\ MiauDoceLar.png)">
@@ -161,34 +162,37 @@
 </html>
 
 <script>
-                    // <script>
-                    // var cor = select_cor.value
+  var listaPelagem = [];
+  var listaIdade = [];
+  var listaSexo= [];
 
-    function listarInfosDeUm() {
+    var perg1 = select_pergunta1.value;
+    listaPelagem.push(perg1);
+
+
+
+    
+    var perg2 = select_pergunta2.value;
+    listaPelagem.push(perg2);
+    var perg3 = select_pergunta3.value;
+    listaPelagem.push(perg3);
+    var perg4 = select_pergunta4.value;
+    listaPelagem.push(perg4);
+    var perg5 = select_pergunta5.value;
+    listaPelagem.push(perg5);
+
+
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+
+    function adicionarCorPelagem() {
         console.log("Criar função de trazer informações de post escolhido");
     }
 
-    function editar() {
-        fetch(`/avisos/editar/${sessionStorage.getItem("ID_POSTAGEM_EDITANDO")}`, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                descricao: textarea_descricao.value
-            })
-        }).then(function (resposta) {
-
-            if (resposta.ok) {
-                window.alert("Post atualizado com sucesso pelo usuario de email: " + sessionStorage.getItem("EMAIL_USUARIO") + "!");
-                window.location = "/dashboard/mural.html"
-            } else if (resposta.status == 404) {
-                window.alert("Deu 404!");
-            } else {
-                throw ("Houve um erro ao tentar realizar a postagem! Código da resposta: " + resposta.status);
-            }
-        }).catch(function (resposta) {
-            console.log(`#ERRO: ${resposta}`);
-        });
+    function adicionarIdade() {
+        console.log("Criar função de trazer informações de post escolhido");
+    }
+    
+    function adicionarSexo() {
+        console.log("Criar função de trazer informações de post escolhido");
     }
 </script>
