@@ -253,6 +253,13 @@ input {
   width: 100vw;
 }
 
+.foto {
+  height: 80%;
+  align-items: center;
+  margin-left: 550px;
+  margin-top: 65px;
+}
+
 .header-left a {
   text-decoration: none;
   color: white;

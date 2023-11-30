@@ -14,6 +14,11 @@ body{
   height: 100%;
 }
 
+/* .janela {
+  display: flex;
+  width: 100vw;
+} */
+
 .container-grafico{
   display: flex;
   flex-direction: column;
