@@ -62,7 +62,7 @@ body {
 
 .card-cadastro {
   color:#FF93A0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.836);
   padding-top: 25px;
   display: flex;
   flex-direction: column;
@@ -209,7 +209,7 @@ color: #000;
 }
 
 .container-sobreMim {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.774);
   padding-top: 25px;
   display: flex;
   flex-direction: column;
@@ -245,7 +245,7 @@ color: #000;
 /*BARRA DE ROLAGEM DO NAVEGADOR*/
 
 .container-gratidao {
-  background-color: rgba(255, 255, 255, 0.774);
+  background-color: rgba(255, 255, 255, 0.836);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -266,7 +266,7 @@ color: #000;
 }
 
 .container-gratidao p {
-  color: rgb(73, 73, 73);
+  color: rgb(0, 0, 0);
   font-family: "AppetitePro";
   /* padding: 15px; */
   margin: 30px;
@@ -274,7 +274,7 @@ color: #000;
 }
 
 .container-index {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.836);
   padding-top: 25px;
   display: flex;
   flex-direction: column;
@@ -299,7 +299,7 @@ color: #000;
 
 .card-login {
   color:#FF93A0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.836);
   display: flex;
   flex-direction: column;
   align-items: center;
