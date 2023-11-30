@@ -38,14 +38,15 @@ pergunta VARCHAR(200) NOT NULL);
 -- respostaOpcao VARCHAR(80) NOT NULL);
 
 CREATE TABLE respostasFormulario(
-idResposta INT,
-fkUsuario INT,
+idResposta INT PRIMARY KEY AUTO_INCREMENT,
+fkUsuario INT NOT NULL,
 CONSTRAINT fkRespostas FOREIGN KEY (fkUsuario) REFERENCES usuario(idUsuario),
-CONSTRAINT chavePrimaria PRIMARY KEY (idResposta, fkUsuario),
+-- CONSTRAINT chavePrimaria PRIMARY KEY (idResposta, fkUsuario),
 fkPergunta INT NOT NULL,
 CONSTRAINT fkRespostasPergunta FOREIGN KEY (fkPergunta) REFERENCES perguntasFormulario(idPergunta),
-fkOpcao INT NOT NULL,
-CONSTRAINT fkRespostasOpcao FOREIGN KEY (fkOpcao) REFERENCES opcoesRespostas(idOpcao));
+-- fkOpcao INT NOT NULL,
+-- CONSTRAINT fkRespostasOpcao FOREIGN KEY (fkOpcao) REFERENCES opcoesRespostas(idOpcao)
+);
 
 -- INSERT INTO perguntasFormulario VALUES
 -- (null, "Qual é a sua cor de pelagem de gato favorita?"),
