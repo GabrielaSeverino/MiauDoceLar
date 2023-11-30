@@ -162,26 +162,15 @@
 </html>
 
 <script>
-  var listaPelagem = [];
-  var listaIdade = [];
-  var listaSexo= [];
-
+    var listaPelagem = [];
+    var listaIdade = [];
     var perg1 = select_pergunta1.value;
     listaPelagem.push(perg1);
-
-
-
-    
-    var perg2 = select_pergunta2.value;
-    listaPelagem.push(perg2);
     var perg3 = select_pergunta3.value;
     listaPelagem.push(perg3);
-    var perg4 = select_pergunta4.value;
-    listaPelagem.push(perg4);
-    var perg5 = select_pergunta5.value;
-    listaPelagem.push(perg5);
-
-
+    var perg7 = select_pergunta7.value;
+    listaIdade.push(perg7);
+    
     b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
     function adicionarCorPelagem() {
@@ -189,10 +178,6 @@
     }
 
     function adicionarIdade() {
-        console.log("Criar função de trazer informações de post escolhido");
-    }
-    
-    function adicionarSexo() {
         console.log("Criar função de trazer informações de post escolhido");
     }
 </script>
