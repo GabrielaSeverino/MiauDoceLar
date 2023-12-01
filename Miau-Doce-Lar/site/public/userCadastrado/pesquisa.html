@@ -6,15 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Miau Doce Lar | Purrsquisa</title>
-  <!-- <script src="./js/sessao.js"></script> -->
+  <script src="../js/sessao.js"></script>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="fonts" href="assets/fonts/AppetitePro-Bold-BF64cc5fc3078d1.otf">
   <link rel="fonts" href="assets/fonts/AppetitePro-Regular-BF64cc5fc2daf21.otf">
-  <link rel="dash" href="dashboard.html">
+  <link rel="dashii" href="dashboard.html">
 </head>
 
-<body onload="validarSessao(), listarInfosDeUm()" style="background-image: url(../assets/imgs/Background\ MiauDoceLar.png)">
+<body style="background-image: url(../assets/imgs/Background\ MiauDoceLar.png)">
     <!-- <body onload="validarSessao()"> -->
+      <!-- , listarInfosDeUm()"  -->
 
     <div class="janela">
         <div class="header-left">
@@ -54,6 +55,7 @@
                           <option value="Branco">Branco</option>
                           <option value="Cinza">Cinza</option>
                           <option value="Laranja">Laranja</option>
+                          <option value="Preto">Preto</option>
                           <option value="Tricolor ou bicolor">Tricolor ou bicolor</option>
                           <option value="Rajado ou Escaminha">Rajado ou Escaminha</option>
                         <option value="Tipo Siamês">Tipo Siamês (degradê de marrons)</option>
@@ -166,18 +168,16 @@
     var listaIdade = [];
     var perg1 = select_pergunta1.value;
     listaPelagem.push(perg1);
-    var perg3 = select_pergunta3.value;
-    listaPelagem.push(perg3);
     var perg7 = select_pergunta7.value;
     listaIdade.push(perg7);
     
-    b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
+    // b_usuario.innerHTML = sessionStorage.NOME_USUARIO;
 
-    function adicionarCorPelagem() {
-        console.log("Criar função de trazer informações de post escolhido");
-    }
-
-    function adicionarIdade() {
-        console.log("Criar função de trazer informações de post escolhido");
-    }
+    // function adicionarCorPelagem() {
+    //     console.log("Criar função de trazer informações de post escolhido");
+    // }
+ 
+    // function adicionarIdade() {
+    //     console.log("Criar função de trazer informações de post escolhido");
+    // }
 </script>
