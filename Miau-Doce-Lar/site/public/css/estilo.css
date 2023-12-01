@@ -222,16 +222,7 @@ color: #000;
   padding-bottom: 50px;
 }
 
-.container-sobreMim h7 {
-  color: #FD8210;
-  font-weight: bold;
-  font-size: 20px;
-}
 
-.container-sobreMim p {
-  color: black;
-  font-family: "AppetitePro";
-}
 
 /*BARRA DE ROLAGEM DO NAVEGADOR*/
 ::-webkit-scrollbar-track {
@@ -266,6 +257,16 @@ color: #000;
   padding-top: 20px;
 }
 
+.indexzinho h9 {
+    color: #FD8210;
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display:flex;
+}
+
+
 .container-gratidao p {
   color: rgb(0, 0, 0);
   font-family: "AppetitePro";
@@ -285,12 +286,41 @@ color: #000;
   box-shadow: 0 0 10px 6px #FD8210;
   margin: 10%;
   padding-bottom: 50px;
+  text-align: center;
+
+}
+
+.gatoteca {
+  box-shadow: 0 0 18px 10px #FD8210;
+  /* border-radius: 25%; */
+  padding: 10px;
+  padding-top: 13px;
+}
+
+
+.fotos {
+    box-shadow: 0 0 18px 10px rgb(255, 157, 169);
+    /* border-radius: 25%; */
+    margin-bottom: 45px;
+    padding: 10px;
+    padding-top: 13px;
+}
+
+.fotoTemizi {
+  box-shadow: 0 0 18px 10px rgb(255, 157, 169);
+  /* border-radius: 25%; */
+  margin-bottom: 75px;
+  padding: 10px;
+  padding-top: 13px;
+  /* margin-top: 40px; */
 }
 
 .container-index h9 {
-  color: #FF93A0;
+  color: #FD8210;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 28px;
+  padding: 30px;
+  margin: 30px;
 }
 
 .container-index p {
@@ -325,6 +355,7 @@ color: #000;
   /* border-radius: 25%; */
   margin-bottom: 50px;
   padding: 10px;
+  margin-bottom: 108px;
 }
 
 .destaqueTexto {
@@ -332,6 +363,46 @@ color: #000;
   font-weight: bold;
 }
 
+.container-sobreMim h8 {
+  color: #FD8210;
+  font-weight: bold;
+  font-size: 28px;
+  padding-top: 50px;
+}
+
+.container-sobreMim p {
+  color: rgb(0, 0, 0);
+  font-family: "AppetitePro";
+  /* margin: 30px; */
+  text-align: center;
+  padding: 5%;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.gatos-pretos p {
+  color: rgb(0, 0, 0);
+  font-family: "AppetitePro";
+  margin: 30px;
+  text-align: center;
+  padding: 5%;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.container-sobreMim h7 {
+  color: #FD8210;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 5%;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  /* padding-top: 200px; */
+}
 /* ------------------------------------------------------------------------------------ */
 
 
