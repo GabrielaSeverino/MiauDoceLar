@@ -39,26 +39,27 @@ pergunta VARCHAR(200) NOT NULL);
 
 CREATE TABLE respostasFormulario(
 idResposta INT PRIMARY KEY AUTO_INCREMENT,
-fkUsuario INT NOT NULL,
+fkUsuario INT,
 CONSTRAINT fkRespostas FOREIGN KEY (fkUsuario) REFERENCES usuario(idUsuario),
+respostaSelect VARCHAR(20) NOT NULL
 -- CONSTRAINT chavePrimaria PRIMARY KEY (idResposta, fkUsuario),
-fkPergunta INT NOT NULL,
-CONSTRAINT fkRespostasPergunta FOREIGN KEY (fkPergunta) REFERENCES perguntasFormulario(idPergunta),
+-- fkPergunta INT NOT NULL,
+-- CONSTRAINT fkRespostasPergunta FOREIGN KEY (fkPergunta) REFERENCES perguntasFormulario(idPergunta),
 -- fkOpcao INT NOT NULL,
 -- CONSTRAINT fkRespostasOpcao FOREIGN KEY (fkOpcao) REFERENCES opcoesRespostas(idOpcao)
 );
 
--- INSERT INTO perguntasFormulario VALUES
--- (null, "Qual é a sua cor de pelagem de gato favorita?"),
--- (null, "Qual foi o primeiro critério que pensou ao decidir adotar um gato? (Ou pensou para quando futuramente adotar)?"),
--- (null, "Se você tem ou teve um gato, qual é a cor predominante da pelagem dele?"),
--- (null, "Você já ouviu falar em crenças que associam alguma cor de pelagem de gato a sorte ou azar?"),
--- (null, "Você tem gatos? Se sim, quantos gatinhos?"),
--- (null, "Você acredita que o sexo do gato também está relacionado a certas características de personalidade? (Por exemplo, gatas femêas são mais limpas que os gatos machos)?"),
--- (null, "Você pegou seu gatinho quando ele tinha quanto tempo de vida?"),
--- (null, "Você sabia que depois dos gatos adultos, os gatos pretos têm as taxas de adoção mais baixas em comparação aos gatos de pelagens de outras cores?"),
--- (null, "Você acredita que a cor da pelagem de um gato está associada a certas características de personalidade? (Por exemplo, gatos ruivos são mais apocalípticos)?"),
--- (null, "Você já teve ou atualmente tem um gato preto?");
+INSERT INTO perguntasFormulario VALUES
+(null, "Qual é a sua cor de pelagem de gato favorita?"),
+(null, "Qual foi o primeiro critério que pensou ao decidir adotar um gato? (Ou pensou para quando futuramente adotar)?"),
+(null, "Se você tem ou teve um gato, qual é a cor predominante da pelagem dele?"),
+(null, "Você já ouviu falar em crenças que associam alguma cor de pelagem de gato a sorte ou azar?"),
+(null, "Você tem gatos? Se sim, quantos gatinhos?"),
+(null, "Você acredita que o sexo do gato também está relacionado a certas características de personalidade? (Por exemplo, gatas femêas são mais limpas que os gatos machos)?"),
+(null, "Você pegou seu gatinho quando ele tinha quanto tempo de vida?"),
+(null, "Você sabia que depois dos gatos adultos, os gatos pretos têm as taxas de adoção mais baixas em comparação aos gatos de pelagens de outras cores?"),
+(null, "Você acredita que a cor da pelagem de um gato está associada a certas características de personalidade? (Por exemplo, gatos ruivos são mais apocalípticos)?"),
+(null, "Você já teve ou atualmente tem um gato preto?");
 
 -- INSERT INTO opcoesRespostas VALUES
 -- (null, 1, "Branco"),
@@ -102,3 +103,5 @@ CONSTRAINT fkRespostasPergunta FOREIGN KEY (fkPergunta) REFERENCES perguntasForm
 -- (null, 10, "Sim"),
 -- (null, 10, "Não"),
 -- (null, 10, "Pretendo adotar um no futuro");
+
+SELECT * FROM usuario;
